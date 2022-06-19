@@ -1,12 +1,10 @@
 import numpy as np
 import random as rand
 
-class BoardClass:
+class Board:
 
     # Defines 2D numpy array for the board
     def __init__(self, size):
-        self.x=0
-        self.y=0
         self.size = size
         self.board = createBoard(size)
             
