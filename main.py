@@ -5,7 +5,7 @@ import numpy as np
 import board
 
 #initialize board with size specified
-board = board.BoardClass(5)
+board = board.Board(5)
 
 root = Tk()
 root.title('Loopover')
