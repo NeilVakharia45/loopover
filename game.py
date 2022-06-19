@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 import board as b
 
 class Game:
@@ -7,5 +8,7 @@ class Game:
 
         self.x=-1
         self.y=-1
-        self.board=b.Board(size)
-        
+
+
+    def setBoardSize():
+        return 5

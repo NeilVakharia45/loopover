@@ -7,6 +7,8 @@ class Board:
     def __init__(self, size):
         self.size = size
         self.board = createBoard(size)
+        self.x=-1
+        self.y=-1
             
     # Randomizes board
     def randomizeBoard(self):
@@ -52,8 +54,13 @@ class Board:
     # Compares board against solved board
     def isSolved(self):
         solvedBoard=createBoard(self.size)
-
         return np.array_equal(solvedBoard, self.board)
+
+    # Sets new current coordinates
+    def setCoordinates(self, x, y):
+        self.x=x
+        self.y=y
+
 
 def createBoard(size):
     board = np.zeros((size,size), dtype=int)
